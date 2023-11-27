@@ -132,9 +132,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Graph.h" />
+    <ClInclude Include="SortingAlgorithms.h" />
     <ClInclude Include="Monster.h" />
     <ClInclude Include="Node.h" />
-    <ClInclude Include="Selection Sort.h" />
     <ClInclude Include="Vec2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

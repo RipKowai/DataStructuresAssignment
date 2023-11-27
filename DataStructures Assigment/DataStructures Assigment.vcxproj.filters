@@ -35,7 +35,7 @@
     <ClInclude Include="Monster.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Selection Sort.h">
+    <ClInclude Include="SortingAlgorithms.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
