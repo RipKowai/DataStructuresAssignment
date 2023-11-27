@@ -1,0 +1,3 @@
+﻿  main1.cpp
+C:\Users\georgi.damyanov\source\repos\DataStructures Assigment\DataStructures Assigment\main1.cpp(17,20): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  DataStructures Assigment.vcxproj -> C:\Users\georgi.damyanov\source\repos\DataStructures Assigment\x64\Debug\DataStructures Assigment.exe
