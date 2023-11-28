@@ -4,4 +4,5 @@ public:
 	int health;
 	int attack;
 	int dextirity;
+	int vision;
 };

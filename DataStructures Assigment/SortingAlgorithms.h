@@ -1,7 +1,7 @@
 #pragma once
 #include "Monster.h"
 #pragma region InsertionSort
-void InsertionSort(Monster monsters[], int length) {
+void InsertionSort(Monster* monsters, int length) {
 	for (int i = 0; i < length; i++) {
 		int key = monsters[i].dextirity;
 		int j = i - 1;
@@ -16,7 +16,7 @@ void InsertionSort(Monster monsters[], int length) {
 #pragma endregion
 
 #pragma region SelectionSort
-void SelectionSort(Monster monsters[], int length) {
+void SelectionSort(Monster* monsters, int length) {
     for (int i = 0; i < (length - 1); i++) {
         int minPos = i;
         for (int j = i + 1; j < length; j++) {
@@ -49,5 +49,14 @@ void BubbleSort(Monster* monsters, int length) {
 }
 #pragma endregion
 
+#pragma region MergeSort
+void MergeSort(Monster* monsters, int length){
+	if (length <= 1) return;
 
+	int middle = length / 2;
+	void Divide();
+	void Conquer();
+	void Merge();
+}
+#pragma endregion
 

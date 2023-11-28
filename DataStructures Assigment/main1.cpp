@@ -24,7 +24,7 @@ int main()
 
 #pragma region Monsters
 
-    const int lenght = 100000;
+    const int lenght = 10000;
     //Monster monsters[lenght]{};
     Monster* monsters = new Monster[lenght];
 
@@ -32,6 +32,7 @@ int main()
         monsters[i].attack = rand () % 500;
         monsters[i].health = rand () % 1000;
         monsters[i].dextirity = rand () % 100;
+        monsters[i].vision = rand () % 10000;
     }
     
     //BubbleSort(monsters, lenght);//318msec for 10k monsters //300msec after optimization //19677msec for 100k monsters
@@ -61,6 +62,8 @@ int main()
         std::cout << "Hp:" << monsters[i].health << std::endl;
         std::cout << "Dps:" << monsters[i].attack << std::endl;
         std::cout << "Dex:" << monsters[i].dextirity << std::endl;
+        std::cout << "Dex:" << monsters[i].vision << std::endl;
+        std::cout << std::endl;
     }
     
     std::cout << "SortedList exec time =" << exec_time.count() <<"msec" << std::endl;
