@@ -32,7 +32,7 @@ void SelectionSort(Monster monsters[], int length) {
 #pragma endregion
 
 #pragma region BubbleSort
-void BubbleSort(Monster monsters[], int length) {
+void BubbleSort(Monster* monsters, int length) {
 	bool swapped;
 	int i = 0;
 	do {
@@ -48,4 +48,6 @@ void BubbleSort(Monster monsters[], int length) {
 	} while (swapped);
 }
 #pragma endregion
+
+
 
