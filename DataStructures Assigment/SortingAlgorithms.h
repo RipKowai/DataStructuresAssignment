@@ -60,3 +60,43 @@ void MergeSort(Monster* monsters, int length){
 }
 #pragma endregion
 
+#pragma region QuickSort
+void QuickSort(Monster* monsters, int length);
+
+void QuickSortReccursion(Monster* monsters, int low, int high);
+
+int partition(Monster* monsters, int low, int high);
+
+void QuickSort(Monster* monsters, int length) {
+	srand(time(NULL));
+	QuickSortReccursion(monsters, 0, length - 1);
+}
+
+void QuickSortReccursion(Monster* monsters, int low, int high) {
+	int pivot = partition(monsters, low, high);
+
+	QuickSortReccursion(monsters, low, pivot - 1);
+	QuickSortReccursion(monsters, pivot + 1, high);
+}
+
+int partition(Monster* monsters, int low, int high) {
+	int pivot = low + (std::rand() % (high - low + 1));
+	int pivotValue = monsters[high].vision;
+	int i = low;
+
+	if (pivot != high) {
+		std::swap(monsters[pivot].vision, monsters[high].vision);
+	}
+
+	for (int j = low; j < high; j++) {
+		if (monsters[j].vision <= pivotValue) {
+			std::swap(monsters[i].vision, monsters[j].vision);
+			i++;
+		}
+	}
+
+	std::swap(monsters[i].vision, monsters[high].vision);
+	return i;
+}
+
+#pragma endregion

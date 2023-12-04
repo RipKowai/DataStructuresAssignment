@@ -2,6 +2,9 @@
 #include <iostream>
 #include <fstream>
 #include <chrono>
+#include <utility>
+#include <ctime>
+#include <cstdlib>
 
 #include "Monster.h"
 #include "SortingAlgorithms.h"
@@ -37,7 +40,8 @@ int main()
     
     //BubbleSort(monsters, lenght);//318msec for 10k monsters //300msec after optimization //19677msec for 100k monsters
     //SelectionSort(monsters, lenght);//180msec for 10k monsters //3507msec for 100k monsters
-    InsertionSort(monsters, lenght);//74msec for 10k monsters //2205msec for 100k monsters
+    //InsertionSort(monsters, lenght);//74msec for 10k monsters //2205msec for 100k monsters
+    QuickSort(monsters, lenght);
     auto end = HRC::now();
     auto exec_time = std::chrono::duration_cast<MSEC>(end - start);
 #pragma endregion
@@ -62,7 +66,7 @@ int main()
         std::cout << "Hp:" << monsters[i].health << std::endl;
         std::cout << "Dps:" << monsters[i].attack << std::endl;
         std::cout << "Dex:" << monsters[i].dextirity << std::endl;
-        std::cout << "Dex:" << monsters[i].vision << std::endl;
+        std::cout << "Vision:" << monsters[i].vision << std::endl;
         std::cout << std::endl;
     }
     
@@ -70,3 +74,4 @@ int main()
 #pragma endregion
     return 0;
 }
+
