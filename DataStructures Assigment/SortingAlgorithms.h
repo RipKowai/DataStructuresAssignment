@@ -73,20 +73,23 @@ void QuickSort(Monster* monsters, int length) {
 }
 
 void QuickSortReccursion(Monster* monsters, int low, int high) {
-	int pivot = partition(monsters, low, high);
+	if (low < high) {
+		int pivot = partition(monsters, low, high);
 
-	QuickSortReccursion(monsters, low, pivot - 1);
-	QuickSortReccursion(monsters, pivot + 1, high);
+		QuickSortReccursion(monsters, low, pivot - 1);
+		QuickSortReccursion(monsters, pivot + 1, high);
+	}
 }
 
 int partition(Monster* monsters, int low, int high) {
-	int pivot = low + (std::rand() % (high - low + 1));
 	int pivotValue = monsters[high].vision;
 	int i = low;
+	int pivot = low + (rand() % (high - low + 1));
 
 	if (pivot != high) {
 		std::swap(monsters[pivot].vision, monsters[high].vision);
 	}
+
 
 	for (int j = low; j < high; j++) {
 		if (monsters[j].vision <= pivotValue) {

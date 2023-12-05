@@ -1,5 +1,4 @@
 ﻿  main1.cpp
-C:\Users\Galaxy\Documents\GitHub\DataStructuresAssignment\DataStructures Assigment\SortingAlgorithms.h(78,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\Galaxy\Documents\GitHub\DataStructuresAssignment\DataStructures Assigment\main1.cpp(26,20): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\Galaxy\Documents\GitHub\DataStructuresAssignment\DataStructures Assigment\SortingAlgorithms.h(87): warning C4717: 'QuickSortReccursion': recursive on all control paths, function will cause runtime stack overflow
-  DataStructures Assigment.vcxproj -> C:\Users\Galaxy\Documents\GitHub\DataStructuresAssignment\x64\Debug\DataStructures Assigment.exe
+C:\Users\georgi.damyanov\Documents\GitHub\DataStructuresAssignment\DataStructures Assigment\SortingAlgorithms.h(71,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\georgi.damyanov\Documents\GitHub\DataStructuresAssignment\DataStructures Assigment\main1.cpp(26,20): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  DataStructures Assigment.vcxproj -> C:\Users\georgi.damyanov\Documents\GitHub\DataStructuresAssignment\x64\Debug\DataStructures Assigment.exe

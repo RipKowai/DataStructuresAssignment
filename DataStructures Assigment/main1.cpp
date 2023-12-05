@@ -27,7 +27,7 @@ int main()
 
 #pragma region Monsters
 
-    const int lenght = 10000;
+    const int lenght = 1000;
     //Monster monsters[lenght]{};
     Monster* monsters = new Monster[lenght];
 
@@ -41,7 +41,7 @@ int main()
     //BubbleSort(monsters, lenght);//318msec for 10k monsters //300msec after optimization //19677msec for 100k monsters
     //SelectionSort(monsters, lenght);//180msec for 10k monsters //3507msec for 100k monsters
     //InsertionSort(monsters, lenght);//74msec for 10k monsters //2205msec for 100k monsters
-    QuickSort(monsters, lenght);
+    QuickSort(monsters, lenght);//34msec for 100k
     auto end = HRC::now();
     auto exec_time = std::chrono::duration_cast<MSEC>(end - start);
 #pragma endregion
