@@ -3,13 +3,10 @@
 
 #include <vector>
 
-class Node {
-	Vec2 position;
-	std::vector<Node>neighbors;
-	int id;
-
-	Node(Vec2 position, int id) {
-		this->position = position;
-		this->id = id;
-	}
+struct Node {
+    bool isWall = false;
+    Node* parent = nullptr;
+    std::vector<Node*> nb;//stands for neighbor
+    int i = -1;
+    int j = -1;
 };

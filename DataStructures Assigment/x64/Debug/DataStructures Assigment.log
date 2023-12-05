@@ -1,3 +1,5 @@
-﻿  main1.cpp
-C:\Users\georgi.damyanov\Documents\GitHub\DataStructuresAssignment\DataStructures Assigment\SortingAlgorithms.h(71,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  DataStructures Assigment.vcxproj -> C:\Users\georgi.damyanov\Documents\GitHub\DataStructuresAssignment\x64\Debug\DataStructures Assigment.exe
+﻿  Graph.cpp
+  MyGraph.cpp
+C:\Users\Galaxy\Documents\GitHub\DataStructuresAssignment\DataStructures Assigment\MyGraph.cpp(101,10): warning C4930: 'Grid ShowGraph(void)': prototyped function not called (was a variable definition intended?)
+  Generating Code...
+  DataStructures Assigment.vcxproj -> C:\Users\Galaxy\Documents\GitHub\DataStructuresAssignment\x64\Debug\DataStructures Assigment.exe

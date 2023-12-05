@@ -224,7 +224,7 @@ private:
 };
 
 
-int main()
+/*int main()
 {
     Grid g;
 
@@ -233,4 +233,4 @@ int main()
     g.breadthFirst();
     g.depthFirst();
 
-}
+}*/

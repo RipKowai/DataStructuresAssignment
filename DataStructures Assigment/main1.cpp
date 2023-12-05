@@ -5,7 +5,6 @@
 #include <utility>
 #include <ctime>
 #include <cstdlib>
-
 #include "Monster.h"
 #include "SortingAlgorithms.h"
 
